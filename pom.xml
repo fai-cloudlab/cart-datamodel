@@ -187,6 +187,16 @@
             <artifactId>swagger-annotations</artifactId>
             <version>${swagger-annotations-version}</version>
         </dependency>
+        <dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-version}</version>
+		</dependency>
 
         <!-- HTTP client: Spring RestTemplate -->
         <dependency>
@@ -242,5 +252,6 @@
         <jackson-threetenbp-version>2.6.4</jackson-threetenbp-version>
         <maven-plugin-version>1.0.0</maven-plugin-version>
         <junit-version>4.12</junit-version>
+        <springfox-version>2.9.2</springfox-version>
     </properties>
 </project>
