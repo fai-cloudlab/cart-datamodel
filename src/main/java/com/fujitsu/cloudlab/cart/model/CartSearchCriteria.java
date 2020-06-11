@@ -31,7 +31,7 @@ public class CartSearchCriteria {
   private UUID cartId = null;
 
   @JsonProperty("offerId")
-  private UUID offerId = null;
+  private String offerId = null;
 
   @JsonProperty("offerExpirationDate")
   private String offerExpirationDate = null;
@@ -54,7 +54,7 @@ public class CartSearchCriteria {
     this.cartId = cartId;
   }
 
-  public CartSearchCriteria offerId(UUID offerId) {
+  public CartSearchCriteria offerId(String offerId) {
     this.offerId = offerId;
     return this;
   }
@@ -64,11 +64,11 @@ public class CartSearchCriteria {
    * @return offerId
   **/
   @ApiModelProperty(example = "d290f1ee-6c54-4b01-90e6-d701748f0851", value = "")
-  public UUID getOfferId() {
+  public String getOfferId() {
     return offerId;
   }
 
-  public void setOfferId(UUID offerId) {
+  public void setOfferId(String offerId) {
     this.offerId = offerId;
   }
 
